@@ -16,11 +16,11 @@ USING_NS_CC_EXT;
 #include "Scene2.h"
 
 //------- libNetwork headers ----------
-#include "PacketSender.h"
-#include "NetworkManager.h"
-#include "NetworkMonitor.h"
-#include "OnlineDefine.h"
-#include "OnlineHandler.h"
+#include "TCNetwork/PacketSender.h"
+#include "TCNetwork/NetworkManager.h"
+#include "TCNetwork/NetworkMonitor.h"
+#include "TCNetwork/OnlineDefine.h"
+#include "TCNetwork/OnlineHandler.h"
 
 NNetworkManager* GNetworkManager=NULL;
 NNetworkMonitor* GNetworkMonitor=NULL;

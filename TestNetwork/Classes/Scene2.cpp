@@ -8,9 +8,9 @@
 
 #include "Scene2.h"
 #include "MainMenuScene.h"
-#include "OnlineDefine.h"
-#include "OnlineHandler.h"
-#include "PacketSender.h"
+#include "TCNetwork/OnlineDefine.h"
+#include "TCNetwork/OnlineHandler.h"
+#include "TCNetwork/PacketSender.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
