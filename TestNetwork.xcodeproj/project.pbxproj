@@ -266,7 +266,25 @@
 		3613FD37179F4566002E9967 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 3613FD36179F4566002E9967 /* cpVect.c */; };
 		3613FD3E179F4566002E9967 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3613FD3D179F4566002E9967 /* AppDelegate.cpp */; };
 		3613FD41179F4566002E9967 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3613FD40179F4566002E9967 /* HelloWorldScene.cpp */; };
+		3613FD4F179F4959002E9967 /* libTCNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613FD4C179F4854002E9967 /* libTCNetwork.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3613FD4B179F4854002E9967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3613F9A9179F422D002E9967;
+			remoteInfo = TCNetwork;
+		};
+		3613FD4D179F4949002E9967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3613F9A8179F422D002E9967;
+			remoteInfo = TCNetwork;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3613F9C6179F4560002E9967 /* TestNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -832,6 +850,7 @@
 		3613FD3D179F4566002E9967 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		3613FD3F179F4566002E9967 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		3613FD40179F4566002E9967 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCNetwork.xcodeproj; path = TCNetwork/TCNetwork.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -839,6 +858,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3613FD4F179F4959002E9967 /* libTCNetwork.a in Frameworks */,
 				3613F9CA179F4560002E9967 /* QuartzCore.framework in Frameworks */,
 				3613F9CC179F4560002E9967 /* OpenGLES.framework in Frameworks */,
 				3613F9CE179F4560002E9967 /* OpenAL.framework in Frameworks */,
@@ -858,6 +878,7 @@
 		3613F9BD179F4560002E9967 = {
 			isa = PBXGroup;
 			children = (
+				3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */,
 				3613F9D9179F4560002E9967 /* TestNetwork */,
 				3613F9C8179F4560002E9967 /* Frameworks */,
 				3613F9C7179F4560002E9967 /* Products */,
@@ -1984,6 +2005,14 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		3613FD48179F4854002E9967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3613FD4C179F4854002E9967 /* libTCNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1998,6 +2027,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3613FD4E179F4949002E9967 /* PBXTargetDependency */,
 			);
 			name = TestNetwork;
 			productName = TestNetwork;
@@ -2022,12 +2052,28 @@
 			mainGroup = 3613F9BD179F4560002E9967;
 			productRefGroup = 3613F9C7179F4560002E9967 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3613FD48179F4854002E9967 /* Products */;
+					ProjectRef = 3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3613F9C5179F4560002E9967 /* TestNetwork */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3613FD4C179F4854002E9967 /* libTCNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTCNetwork.a;
+			remoteRef = 3613FD4B179F4854002E9967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3613F9C4179F4560002E9967 /* Resources */ = {
@@ -2298,6 +2344,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3613FD4E179F4949002E9967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TCNetwork;
+			targetProxy = 3613FD4D179F4949002E9967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		3613FD42179F4566002E9967 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2379,6 +2433,8 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"TestNetwork/libs/Chipmunk/include/chipmunk\"";
@@ -2403,6 +2459,8 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"TestNetwork/libs/Chipmunk/include/chipmunk\"";
@@ -2430,6 +2488,7 @@
 				3613FD46179F4566002E9967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

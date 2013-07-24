@@ -1,0 +1,3 @@
+[submodule "TCNetwork"]
+	path = TCNetwork
+	url = git@github.com:icywindwemade/TCNetwork.git
