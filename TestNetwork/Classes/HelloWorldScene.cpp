@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "TCNetwork/TCNetwork.h"
+#include "TCNetwork/HiWorld.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -23,7 +24,7 @@ CCScene* HelloWorld::scene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-    //HiWorld hiWorld;
+    HiWorld hiWorld;
     
     //////////////////////////////
     // 1. super init first
