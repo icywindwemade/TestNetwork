@@ -298,6 +298,7 @@
 		3613FD37179F4566002E9967 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 3613FD36179F4566002E9967 /* cpVect.c */; };
 		3613FD3E179F4566002E9967 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3613FD3D179F4566002E9967 /* AppDelegate.cpp */; };
 		3613FD4F179F4959002E9967 /* libTCNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613FD4C179F4854002E9967 /* libTCNetwork.a */; };
+		36AD099417A3281200CA87F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AD099317A3281200CA87F7 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -915,6 +916,7 @@
 		3613FD3C179F4566002E9967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		3613FD3D179F4566002E9967 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCNetwork.xcodeproj; path = TCNetwork/TCNetwork.xcodeproj; sourceTree = "<group>"; };
+		36AD099317A3281200CA87F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1010,6 +1012,7 @@
 		3613F9BD179F4560002E9967 = {
 			isa = PBXGroup;
 			children = (
+				36AD099317A3281200CA87F7 /* Default-568h@2x.png */,
 				3613020A17A07CE8002E9967 /* libc++.dylib */,
 				3613FD47179F4854002E9967 /* TCNetwork.xcodeproj */,
 				3613F9D9179F4560002E9967 /* TestNetwork */,
@@ -2259,6 +2262,7 @@
 				3613024417A0807A002E9967 /* btn-test-2.png in Resources */,
 				3613024517A0807A002E9967 /* CloseNormal.png in Resources */,
 				3613024617A0807A002E9967 /* CloseSelected.png in Resources */,
+				36AD099417A3281200CA87F7 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

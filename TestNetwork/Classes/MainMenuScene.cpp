@@ -14,23 +14,29 @@ USING_NS_CC_EXT;
 #include "MainMenuScene.h"
 #include "MainMenuSceneLoader.h"
 #include "Scene2.h"
+#include "TCNetwork/TCNetwork.h"
 
 //------- libNetwork headers ----------
-#include "TCNetwork/PacketSender.h"
-#include "TCNetwork/NetworkManager.h"
-#include "TCNetwork/NetworkMonitor.h"
-#include "TCNetwork/OnlineDefine.h"
-#include "TCNetwork/OnlineHandler.h"
+
 
 NNetworkManager* GNetworkManager=NULL;
 NNetworkMonitor* GNetworkMonitor=NULL;
 
+OnlineErrorHandler OLErrorHandleCB=NULL;
+
+void HandleOnlineError( int, const char *);
+
+void HandleOnlineError( int a, const char * s ) {
+    printf("Online Error: %d (%s)\n", a, s);
+}
 
 
+//=============================================================================
 CCScene* MainMenuScene::scene()
 {
     CCScene* scene = CCScene::create();
     scene->addChild(MainMenuSceneLoader::load());
+    OLErrorHandleCB = HandleOnlineError;
     
     return scene;
 }
@@ -56,11 +62,6 @@ bool MainMenuScene::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, const 
     }
     return false;
 }
-//bool MainMenuScene::onAssignCCBCustomProperty(cocos2d::CCObject *pTarget, const char *pMemberVariableName, cocos2d::extension::CCBValue *pCCBValue)
-//{
-//    return false;
-//}
-
 
 void MainMenuScene::onClose(cocos2d::CCObject *pSender)
 {
